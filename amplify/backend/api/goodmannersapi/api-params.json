@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/users",
+            "lambdaFunction": "goodmannersapi",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "goodmannersapi",
+    "apiName": "goodmannersapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "goodmannersapi"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-asesment-dev-142515-authRole",
+        "unAuthRoleName": "amplify-asesment-dev-142515-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "goodmannersapi",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
